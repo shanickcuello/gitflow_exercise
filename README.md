@@ -23,6 +23,7 @@ example names:
 
 ### B. First feature 
 1. "Develop" a feature 
+    1. Create a branch for the feature development from the `develop`.
     1. Create a file feature2/contents.txt and write something there.
     1. PR it into the develop (mind the target repo. You want to target your repo, not the source of the fork).
 1. "Release" the version

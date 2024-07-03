@@ -8,12 +8,12 @@ Keywords for branch name prefixes are:
 - `feature` for feature branches
 - `task` for standalone tasks or parts of the feature
 - `test` for experiments that are not intended to be merged into `develop`
-- `ver` for release branches and tags
+- `version` for release branches and tags
 - `hotfix` for branches that urgently (out of the usuall iteration flow) change the content (code/app) that has already been built\released  
 
 example names:  
 - `task/[TaskID-1337]-human-understandable-task-name`  
-- `ver/1.1`
+- `version/1.1`
 
 ## Exercises
 
@@ -26,7 +26,7 @@ example names:
     1. Create a file feature2/contents.txt and write something there.
     1. PR it into the develop (mind the target repo. You want to target your repo, not the source of the fork).
 1. "Release" the version
-    1. Create a `ver` branch.
+    1. Create a `version` branch.
     1. Update and commit the version number.
     1. Tag the commit.
 1. Do the post-release house-keeping
@@ -50,7 +50,7 @@ example names:
     1. Swap the _code_ and _git_ words in feature2
     1. Create a `hotfix` branch from `develop`.
     1. PR `task` into `hotfix`
-1. "Release" the version (`ver` branch is not needed here sice we have a `hotfix` one)
+1. "Release" the version (`version` branch is not needed here sice we have a `hotfix` one)
 1. Do the post-release house-keeping
 
 ### Z. Improve

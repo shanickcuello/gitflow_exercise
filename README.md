@@ -43,9 +43,10 @@ example names:
 1. Improve feature2 yet again 
     1. Create a branch from `develop`.
     1. Set it's file text to _"I love git"_. Don't merge it yet
-1. PR two feature2 improvements into `develop`. Solve the merge conflict. Two changes should be present in develop, the sentence should be correct.
-1. "Release" the version.
-1. Do the post-release house-keeping.
+1. Create and merge a PR for each feature2 improvement into `develop`.  
+Resolve the merge conflict. Two changes should be present in `develop` in one sentence. The sentence should be grammatically and punctuationally correct. (This will require manual conflict resolution)
+1. "Release" the version. (See part B-2 for the details)
+1. Do the post-release house-keeping. (See part B-3 for the details)
 
 ### D. Hotfix
 1. Create a hotfix

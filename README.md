@@ -49,12 +49,17 @@ Resolve the merge conflict. Two changes should be present in `develop` in one se
 1. Do the post-release house-keeping. (See part B-3 for the details)
 
 ### D. Hotfix
-1. Create a hotfix
-    1. Create a `task` branch from `master`.
-    1. Swap the _code_ and _git_ words in feature2
-    1. Create a `hotfix` branch from `develop`.
+1. Decide that you want a hotfix
+    1. Create a `hotfix` branch from `master`. (Mind that you want that branch name to contain the upcoming hotfix version number)
+1. Make changes
+    1. Create a `task` branch from `hotfix`.
+    1. Swap the _code_ and _git_ words in feature2 (ex: If it was "I love code and git" it should become "I love git and code")
+    
     1. PR `task` into `hotfix`
-1. "Release" the version (`version` branch is not needed here sice we have a `hotfix` one)
+1. "Release" the version 
+    1. `version` branch creation is **not** needed here sice we have a `hotfix` one
+    1. Update and commit the version number (version.txt file).
+    1. Tag the commit.
 1. Do the post-release house-keeping
 
 ### Z. Improve

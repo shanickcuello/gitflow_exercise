@@ -25,14 +25,16 @@ example names:
 1. "Develop" a feature 
     1. Create a branch for the feature development from the `develop`.
     1. Create a file feature2/contents.txt and write something there.
-    1. PR it into the develop (mind the target repo. You want to target your repo, not the source of the fork).
+    1. Create a PR targeting the `develop` (**mind the target repo.** You want to target your repo, not the source of the fork).
+    1. Approve the PR and merge it via creating a merge commit.
+    1. Make sure that the feature branch is deleted.
 1. "Release" the version
-    1. Create a `version` branch.
-    1. Update and commit the version number.
+    1. Create a `version` branch from `develop`.
+    1. Update and commit the version number (`version.txt` file).
     1. Tag the commit.
 1. Do the post-release house-keeping
     1. Merge the release branch into `develop`.
-    1. Merge the latest release tag into `master` **using fast-forward**. So master would point to the exact commit that has a tag.
+    1. Merge the latest release tag into `master` **using fast-forward**. So `master` branch would point to the exact commit that has a tag.
 
 ### C. Updpate and resolve the conflict
 1. Improve feature2

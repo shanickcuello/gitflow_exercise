@@ -1,2 +1,2 @@
-I love git and code
+I love code and git
 
